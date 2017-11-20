@@ -1,51 +1,88 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<title>ESAKKI RAJ</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<style>
-		* { padding: 0; margin: 0; }
-		body { 
-			padding-top: 10px; 
-			text-align: center;
-			background-image: url('bgnoise.png'); 
-			background-repeat: repeat; 
-			font-family: 'Open Sans', sans-serif; 
-		}
-    a, a:hover, a:active, a:visited {
-      text-decoration: none;
-      font-color: black;
-    }
-		.heart { color: red; }
-		.myavatar {
-			border-radius: 50%;
-			border: 1px solid white;
-		}
-		.content {
-			max-width: 600px;
-			margin: 10px auto;
-			line-height: 1.5em;
-		}
-		.strike {
-			text-decoration: line-through;
-		}
-		.footer {
-			margin-top: 20px;
-      padding-top: 10px;
-		}
-	</style>
-	</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+    <title>ESAKKI RAJ</title>
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .part {
+            width: 50%;
+            min-height: 100vh;
+            max-height: 100vh;
+            float: left;
+        }
+        .black-part {
+            background-color: black;
+            color: white;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .white-part {
+            font-family: 'Saira Semi Condensed', sans-serif;
+            font-size: 1.7em;
+            padding: 20px;
+        }
+        .section {
+            width: 100%;
+            margin-top: 5%;
+        }
+        .section span {
+            padding: 0 5px;
+            border-bottom: 1px solid rgb(240, 238, 238);
+        }
+        .section span:hover {
+            border-bottom: 1px solid rgb(102, 102, 102);
+        }
+        .green { color: rgba(47, 179, 47, 0.788); }
+        .red { color: rgb(243, 74, 74); }
+        .blue { color: rgb(34, 182, 250); }
+        .social-link { width: 50%; float: left; }
+        .social-link a { font-size: 0.8em; text-decoration: none; }
+        .social-link span { padding-left: 10px; }
+        .social-link img { margin-bottom: -5px; width: 25px; height: 25px;  }
+        .footer { position: absolute; bottom: 10px; font-size: 0.5em;text-align: center; }
+        .heart-emo { color: red; }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="part black-part"><!-- Have to workout here --></div>
+        <div class="part white-part">
+            <div class="section">
+                Hi <br/>
+                This is Esakki Raj. Softare Engineer from Chennai, Tamil Nadu.
+                <span class="red">Javascript aficionado.</span>
+                <span class="green">Machine Learning toddler.</span>
+                Dated <span class="blue">Java</span> in the past. 
+                Things that excite me are UI Engineering, Data Visualizations, Cryptocurrencies and P2P.
+                Enjoy reading books mostly Sci-fi. Chocophile. 
+                Exploring places in my Honda CBR 250.
+            </div>
+            <div class="social-links">
+                <br/>
+                <div class="social-link"><a href="https://github.com/esakkiraj"><img src="./icons/icon-github2.png" /><span>Assorted Code</span></a></div>
+                <div class="social-link"><a href="https://twitter.com/esakki_raj"><img src="./icons/icon-twitter2.png" /><span>Infrequent Tweets</span></a></div>
+                <div class="social-link"><a href="https://medium.com/@esakkignu"><img src="./icons/icon-medium2.png" /><span>Writing/Reading a lot</span></a></div>
+                <div class="social-link"><a href="https://www.linkedin.com/in/esakkiraj"><img src="./icons/icon-linkedin2.png" /><span>Professional Network</span></a></div>
+            </div>
+            <div class="footer">Built with <span class="heart-emo">&#10084;</span> using VSCode, Google fonts, Icons from <a href="http://icons8.com">icons8.com</a>.</div>
+        </div>
+    </div>
 </body>
-	<div class="picContainer">
-		<img src="./itsme.png" class="myavatar" />
-	</div>
-	<h2>Esakki Raj</h2>
-	<div class="content">
-      Hi. This is Esakki Raj from Chennai. Software Enginner, <a href="http://www.tce.edu/">TCE</a> Alumni, fitness freak , <a href="https://www.16personalities.com/enfp-personality">ENFP Type</a> and deeply obsessed with Javascript. Infrequent tweets at <a href="https://twitter.com/esakki_raj">esakki_raj</a>. <i class="strike">Write a lot</i> Read a lot at <a href="https://medium.com/@esakkignu">medium</a>. Anything to say, shot an email to esakkiraj[dot]tc[at]gmail[dot]com.
-	</div>
-  <div>#Javascript #Java #Reactjs #Machine_Learning</div>
-  <div class="footer">
-    Handcrafted with <span class='heart'>&#10084;</span> using Github pages, VIM, Google font & little pepper.
-  </div>
-</body>
+
 </html>
